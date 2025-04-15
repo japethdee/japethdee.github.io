@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Japeth Dee Curriculum Vee</title>
+  <link href="https://bootswatch.com/5/materia/bootstrap.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://icons.getbootstrap.com/assets/font/bootstrap-icons.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      padding-top: 60px;
+      background-image:url("../assets/back.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: bottom;
+      background-attachment: fixed;
+      width: 100%;
+      min-height: 100vh;
+      max-height: max-content;
+      display: flex;
+      flex-direction: column;
+    }
+    .avatar {
+      object-fit: cover;
+      width: 100%;
+      max-width: 300px;
+      border-radius: 50%;
+      border: 5px solid #38157d;
+      box-shadow: 0 0 12px rgba(0,0,0,0.3);
+    }
+    .social-icons i {
+      font-size: 48px;
+      margin: 0 18px;
+      color: #38157d;
+      transition: 0.2s;
+    }
+    .social-icons i:hover {
+      color: #c9adff;
+      transform: scale(1.3);
+    }
+    .badge {
+      font-size: 1rem;
+      padding: 0.5em 0.8em;
+      margin: 0.2em;
+      border-radius: 30px;
+    }
+    .nav-tabs .nav-link.active,
+    .nav-tabs .nav-link.active:focus,
+    .nav-tabs .nav-link.active:hover,
+    .nav-tabs .nav-link:focus {
+      background-color: #dac8ff !important;
+      color: #180047 !important;
+      font-weight: bold;
+    }
+    .nav-tabs .nav-link:hover {
+      background-color: #dac8ff6a;
+      color: #180047;
+      border-bottom: none;
+    }
+    .nav-tabs .nav-link {
+      background-color: #dac8ff31;
+      color: #180047;
+      border-bottom: none;
+    }
+    .tab-pane {
+      animation: fadeIn 0.3s ease-in-out;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    .right-section {
+      text-align: center;
+    }
+    .quote {
+      font-style: italic;
+      color: #38157d;
+      font-size: 18px;
+    }
+    footer {
+      margin-top: 100px;
+      text-align: center;
+      align-content: center;
+      color: #ffffff;
+      font-size: 0.9rem;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div class="container d-flex flex-column flex-1 align-items-center p-0" style="width:100%; height: 100%;">
+    <div class="w-100 h-8 fixed-top shadow-sm" style="pointer-events: none; cursor: none; font-size: 8px; color:#35009f; background-color: #35009f;">1</div>
+    <div class="d-flex flex-column flex-md-row justify-content-center" style="width:100%;">
+      <!-- Left section -->
+      <div class="left-section" style="width:60%; justify-items: center;">
+        <div class="d-flex text-center m-5 mb-4 p-5 border rounded shadow" style="background-color: #f8f2ff96;"><p class="quote mb-0">
+          "With unwavering trust in the Lord and the strength of Christ within me, there is no limit to what I can overcome.
+          I don’t lean on my own understanding, but on His perfect wisdom and grace. In every challenge, I rise—not by my might, but by His power and unfailing love."
+        </p></div>
+        <div class="social-icons mb-3" style="gap: 18px;">
+          <a href="https://www.facebook.com/japeth.dee" target="_blank"><i class="bi bi-facebook"></i></a>
+          <a href="https://x.com/japethdee" target="_blank"><i class="bi bi-twitter-x"></i></a>
+          <a href="https://www.instagram.com/japeth_dee" target="_blank"><i class="bi bi-instagram"></i></a>
+          <a href="https://www.linkedin.com/japeth.dee" target="_blank"><i class="bi bi-linkedin"></i></a>
+          <a href="https://www.github.com/japethdee" target="_blank"><i class="bi bi-github"></i></a>
+        </div>
+        <div class="d-flex flex-wrap" style="gap: 8px;">
+          <span class="badge bg-info shadow">HTML</span>
+          <span class="badge bg-primary shadow">JavaScript</span>
+          <span class="badge bg-secondary shadow-sm">Python</span>
+          <span class="badge bg-success shadow">CSS</span>
+          <span class="badge bg-danger shadow">Java</span>
+          <span class="badge bg-warning shadow text-dark">C#</span>
+          <span class="badge bg-info shadow text-dark">C++</span>
+          <span class="badge bg-dark shadow">ReactJS</span>
+        </div>
+      </div>
+      <!-- Right section -->
+      <div class="right-section text-center" style="width:40%;">
+        <img src="assets/me.jpeg" alt="Japeth Avatar" class="avatar mt-4 mb-3" />
+        <h2  class="fw-bold mb-0" style="font-family: 'Trajan', sans-serif; color: #38157d; letter-spacing: 0.5px;">Japeth Diez Aguelo</h2>
+        <p class="fw-bold " style="color: #38157d;">BSIT 2025</p>
+      </div>
+    </div>
+
+    <div class="navtab mt-5 w-100">
+      <ul class="nav nav-tabs border-0" id="portfolioTabs" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="background-tab" data-bs-toggle="tab" data-bs-target="#background" type="button" role="tab">Background</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="projects-tab" data-bs-toggle="tab" data-bs-target="#projects" type="button" role="tab">Projects</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="research-tab" data-bs-toggle="tab" data-bs-target="#research" type="button" role="tab">Research</button>
+        </li>
+      </ul>
+      <div class="tab-content border shadow p-4" style="border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px; background-color: #f8f2ff96;" id="portfolioTabsContent">
+        <div class="tab-pane fade show active text-start" id="background" role="tabpanel">
+          <!--<h4 class="fw-bold border-bottom pb-2">Personal Details</h4>
+          <p class="mb-1 ms-5"><strong style="margin-right:200px;">Age:</strong> 23 years old</p>
+          <p class="mb-1 ms-5"><strong style="margin-right:176px;">Gender:</strong> Male</p>
+          <p class="mb-1 ms-5"><strong style="margin-right:137px;">Date of Birth:</strong> December 26, 2001</p>
+          <p class="mb-1 ms-5"><strong style="margin-right:147px;">Civil Status:</strong> Single</p>
+          <p class="mb-1 ms-5"><strong style="margin-right:148px;">Citizenship:</strong> Filipino</p>
+          <p class="mb-1 ms-5"><strong style="margin-right:170px;">Religion:</strong> Roman Catholic</p>
+          <p class="mb-1 ms-5"><strong style="margin-right:164px;">Guardian:</strong> Bernardita D. Aguelo</p>
+          <p class="mb-1 ms-5"><strong style="margin-right:130px;">Guardian’s No:</strong> 09178755829</p>-->
+        
+          <h4 class="fw-bold border-bottom pb-2 mt-4">Educational Attainment</h4>
+          <p><strong>Tertiary:</strong></p>
+          <ul>
+            <li><strong>Ateneo de Davao University (2020 – Present)</strong><br>6/F Community Center of the First Companions, Ateneo de Davao University, Roxas Ave, Poblacion District, Davao City, 8000 Davao del Sur, Philippines</li>
+          </ul>
+          <p><strong>Secondary:</strong></p>
+          <ul>
+            <li><strong>San Pedro College (2019 – 2020)</strong><br>12 Guzman St, Obrero, Davao City, 8000 Davao del Sur, Philippines</li>
+            <li><strong>Saint Francis of Assisi College – Main Campus (2018 – 2019)</strong><br>045 Admiral Village, Talon Tres, 1740 Las Piñas City, Philippines</li>
+            <li><strong>Las Piñas National High School – Talon Tres (2014 – 2018)</strong><br>Narra St. Admiral Village, Talon Tres, Las Piñas City, Philippines</li>
+          </ul>
+          <p><strong>Elementary:</strong></p>
+          <ul>
+            <li><strong>Talon Tres Elementary School – Annex (2012 – 2014)</strong><br>Carmencita Village, Talon Tres, 1740 Las Piñas City, Philippines</li>
+            <li><strong>Francisco Benitez III Elementary School (2011 – 2012)</strong><br>3839 F. Nazario, Singkamas, Makati City, 1204 Metro Manila, Philippines</li>
+            <li><strong>Maximo Estrella Elementary School (2008 – 2011)</strong><br>3251 J. Magsaysay, Carmona, Makati City, 1207 Metro Manila, Philippines</li>
+          </ul>
+        
+          <h4 class="fw-bold border-bottom pb-2 mt-4">Experience / Seminars</h4>
+          <ul>
+            <li><strong>Personal Financial Planning Seminar (2019)</strong><br>Saint Francis of Assisi College – Main Campus</li>
+            <li><strong>MarkeTeach Student Conference (2018)</strong><br>Robinsons Place Las Piñas</li>
+            <li><strong>Mental Health and Anti-Bullying Program (2018)</strong><br>Saint Francis of Assisi College – Main Campus</li>
+            <li><strong>Campus Integrity Crusaders Seminar 2018  (2018)</strong><br>Philippine Science High School</li>
+            <li><strong>Disaster Risk Reduction and Management Program (2018)</strong><br>Las Piñas National High School – Talon Tres</li>
+            <li><strong>Enhance Training of ICT Workshop (2017)</strong><br>Division Office of Las Piñas</li>
+            <li><strong>Campus Integrity Crusaders Seminar 2017 (2017)</strong><br>Philippine Science High School</li>
+            <li><strong>Investigatory Science Project – DOST (2016)</strong><br>Division Office of Las Piñas</li>
+            <li><strong>Career Choice Seminar (2016)</strong><br>Las Piñas National High School – Talon Tres</li>
+            <li><strong>Campus Integrity Crusaders Orientation and Planning Workshop 2016 (2016)</strong><br>Division Office of Las Piñas</li>
+            <li><strong>Journalism Summit 2016 (2016)</strong><br>University of Perpetual Help System DALTA</li>
+          </ul>
+        
+          <h4 class="fw-bold border-bottom pb-2 mt-4">Awards</h4>
+          <ul>
+            <li>Grade 12 – With Honors</li>
+            <li>Grade 11 – With Honors</li>
+            <li>Grade 10 – With Honors, Leadership Award</li>
+            <li>Grade 9 – With Honors (90.00)</li>
+            <li>Grade 8 – Overall Top 3</li>
+            <li>Grade 7 – Overall Top 1</li>
+          </ul>
+        
+          <h4 class="fw-bold border-bottom pb-2 mt-4">Skills</h4>
+          <ul>
+            <li>Versatile in Programming Languages</li>
+            <li>Proficient in AI Tools</li>
+            <li>Proficient in English</li>
+            <li>Flexible and can adapt to new environment</li>
+            <li>Fast learner and willing to be trained</li>
+            <li>Computer literate</li>
+            <li>Optimistic at all times</li>
+          </ul>
+        </div>
+        
+        
+        <div class="tab-pane fade" id="projects" role="tabpanel">
+          
+          <h4 class="fw-bold border-bottom pb-2 mt-4">Personal Projects</h4>
+          <ul class="list-unstyled">
+            <li style="font-style:italic">There are no personal projects yet.</li>
+          </ul>
+          <h4 class="fw-bold border-bottom pb-2 mt-4">College Projects</h4>
+          <ul class="list-unstyled">
+            <li><strong>Inventory System</strong> – Tracks pharma stocks, built with ReactJS + MySQL.</li>
+            <li><strong>E-commerce Frontend</strong> – Public client site with cart & quote system.</li>
+            <li><strong>Academic Research App</strong> – React + Firebase with QR/PWA access.</li>
+          </ul>
+        </div>
+        <div class="tab-pane fade" id="research" role="tabpanel">
+          
+          <h4 class="fw-bold border-bottom pb-2 mt-4">Personal Researches</h4>
+          <ul class="list-unstyled">
+            <li style="font-style:italic">There are no personal researches yet.</li>
+          </ul>
+          <h4 class="fw-bold border-bottom pb-2 mt-4">College Researches</h4>
+          <ul class="list-unstyled">
+            <li><strong>Barangay Immunization System</strong> – With SMS, QR, and PWA integration.</li>
+            <li><strong>Inventory Optimization</strong> – For vaccine cold chain & wastage prevention.</li>
+            <li><strong>Community Health Digitalization</strong> – Focus on accessibility and record tracking.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div className="end-note">
+      <h1 style="user-select: none; cursor: default; pointer-events: none; font-size: 100px; color: #c8adff0c;"><b>TO GOD BE THE GLORY</b></h1>
+    </div>
+  </div>
+  <footer class="p-3" style="background-color: #35009f; margin-top: auto;">
+    <p class="mb-0">&copy; 2025 Japeth Dee. Built with 💜 using Bootstrap Materia.</p>
+  </footer>
+</body>
+</html>
