@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="https://icons.getbootstrap.com/assets/font/bootstrap-icons.min.css" />
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
   <style>
-    body {
+    body, html {
       font-family: 'Roboto', sans-serif;
       padding-top: 60px;
       background-image:url("assets/back.png");
@@ -17,22 +17,24 @@
       background-repeat: no-repeat;
       background-position: bottom;
       background-attachment: fixed;
-      width: 100%;
+      width: 100vw;
       min-height: 100vh;
       max-height: max-content;
       display: flex;
       flex-direction: column;
+      overflow-x: hidden;
     }
     .avatar {
       object-fit: cover;
-      width: 100%;
+      width: 30vw;
+      height: auto;
       max-width: 300px;
       border-radius: 50%;
       border: 5px solid #38157d;
       box-shadow: 0 0 12px rgba(0,0,0,0.3);
     }
     .social-icons i {
-      font-size: 48px;
+      font-size: 4vw;
       margin: 0 18px;
       color: #38157d;
       transition: 0.2s;
@@ -42,7 +44,7 @@
       transform: scale(1.3);
     }
     .badge {
-      font-size: 1rem;
+      font-size: 1vw;
       padding: 0.5em 0.8em;
       margin: 0.2em;
       border-radius: 30px;
@@ -78,64 +80,92 @@
     .quote {
       font-style: italic;
       color: #38157d;
-      font-size: 18px;
+      font-size: 1.25vw;
     }
     footer {
       margin-top: 100px;
       text-align: center;
       align-content: center;
       color: #ffffff;
-      font-size: 0.9rem;
+      font-size: 1vw;
       width: 100%;
     }
 
     /* Media Queries for Smaller Screens */
     @media (max-width: 768px) {
       .left-section {
-        width: 100%;
+        width: 50%;
       }
       .right-section {
-        width: 100%;
+        width: 28%;
         margin-top: 10px;
       }
       .social-icons i {
-        font-size: 36px;
-        margin: 0 10px;
+        font-size: 10vw;
+        margin: 0 8px;
       }
       .badge {
-        font-size: 0.9rem;
+        font-size: 3vw;
         padding: 0.4em 0.6em;
       }
       .quote {
-        font-size: 16px;
+        font-size: 5vw;
         margin: 10px;
       }
     }
 
     /* Additional styling for mobile */
     @media (max-width: 576px) {
+      .container {
+        width: 100vw;
+      }
+      .left-section {
+        width: 50%;
+      }
+      .right-section {
+        width: 28%;
+        margin-top: 10px;
+      }
+      .right-section h2 {
+        font-size: 3vw;
+      }
+      .right-section p {
+        font-size: 2vw;
+      }
+      .social-icons i {
+        font-size: 3vw;
+        margin: 0 8px;
+      }
+      .badge {
+        font-size: 2vw;
+        padding: 0.4em 0.6em;
+      }
+      .quoute-container {
+        width: 80%;
+        padding: 0;
+      }
       .quote {
-        font-size: 14px;
+        font-size: 2vw;
       }
       .avatar {
-        max-width: 200px;
+        max-width: 60vw;
       }
     }
   </style>
 </head>
 <body>
-  <div class="container d-flex flex-column flex-1 align-items-center p-0" style="width:100%; height: 100%;">
+  <div class="container d-flex flex-column flex-1 align-items-center p-0" style="width:100vw; max-width: 100vw; height: 100%; margin: 0;">
     <div class="w-100 h-8 fixed-top shadow-sm" style="pointer-events: none; cursor: none; font-size: 8px; color:#35009f; background-color: #35009f;">1</div>
-    <div class="d-flex flex-column flex-md-row justify-content-center" style="width:100%;">
+    <div class="d-flex flex-md-row justify-content-center" style="width:100%;">
       <!-- Left section -->
-      <div class="left-section" style="width:60%; justify-items: center; margin-right: 5%; text-align: left;">
-        <div class="d-flex text-center m-5 mb-4 p-5 border rounded shadow" style="background-color: #f8f2ff96; width: 88%;">
-          <p class="quote mb-0">
+      <div class="left-section" style="width:50%; justify-items: center; text-align: left;">
+        <div class="quote-container d-flex text-center m-5 mb-2 p-1 border rounded shadow" style="background-color: #f8f2ff96; width: 80%;">
+          <p class="quote">
             "With unwavering trust in the Lord and the strength of Christ within me, there is no limit to what I can overcome.
             I don’t lean on my own understanding, but on His perfect wisdom and grace. In every challenge, I rise—not by my might, but by His power and unfailing love."
           </p>
         </div>
-        <div class="social-icons mb-3 text-center" style="gap: 18px; width: 88%;">
+        <div class="social-icons mb-1 text-center" style="gap: 18px; width: 88%;">
           <a href="https://www.facebook.com/japeth.dee" target="_blank"><i class="bi bi-facebook"></i></a>
           <a href="https://x.com/japethdee" target="_blank"><i class="bi bi-twitter-x"></i></a>
           <a href="https://www.instagram.com/japeth_dee" target="_blank"><i class="bi bi-instagram"></i></a>
@@ -154,14 +184,14 @@
         </div>
       </div>
       <!-- Right section -->
-      <div class="right-section text-center" style="width:30%; align-content: center;">
+      <div class="right-section text-center" style="width:28%; align-content: center; justify-items: center;">
         <img src="assets/me.jpeg" alt="Japeth Avatar" class="avatar mt-4 mb-3" />
         <h2  class="fw-bold mb-0" style="font-family: 'Trajan', sans-serif; color: #38157d; letter-spacing: 0.5px;">Japeth Diez Aguelo</h2>
         <p class="fw-bold " style="color: #38157d;">BSIT 2025</p>
       </div>
     </div>
 
-    <div class="navtab mt-5 w-100">
+    <div class="navtab mt-3 w-75">
       <ul class="nav nav-tabs border-0" id="portfolioTabs" role="tablist">
         <li class="nav-item" role="presentation">
           <button class="nav-link active" id="background-tab" data-bs-toggle="tab" data-bs-target="#background" type="button" role="tab">Background</button>
